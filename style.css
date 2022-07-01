@@ -1,0 +1,13 @@
+*{
+    box-sizing: border-box;
+}
+header,main,ul, .logo-and-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+li{
+    margin:  0 2rem 0 2rem;
+    list-style: none;
+}
