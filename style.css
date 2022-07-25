@@ -121,3 +121,53 @@ main{
     
 }
 
+.menu{
+    margin-left: 3vh;
+}
+.mainmenubtn {
+    background-color: white;
+    color:rgba(0, 0, 0, 0.426);
+    border: none;
+    cursor: pointer;
+    padding:10px;
+    margin: top 0px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    
+}
+.mainmenubtn:hover {
+    background-color: white;
+    color: black;
+    }
+.dropdown {
+    position: relative;
+    display: inline-block;
+    
+}
+.dropdown-child {
+    display: none;
+    min-width: 125px;
+    border: solid 1px white;
+    border-radius: 5%;
+    box-shadow: 7px 7px 7px 7px  rgba(0, 0, 0, 0.146);
+    background-color: white;
+}
+.dropdown-child a {
+    color: black;
+    background-color: white;
+    padding: 3px 12px;
+    text-decoration: none;
+    display: block;
+    font-size: smaller;
+
+    display: flex;
+    justify-content: space-between;
+   
+    
+}
+.dropdown:hover .dropdown-child {
+    display: block;
+    position: absolute;
+    box-shadow: 10px rgb(0, 0, 0);
+}
