@@ -1,0 +1,193 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Epilogue', sans-serif;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 100;
+}
+
+/* corpo do site */
+main{
+    background-color: white;
+    display: flex;
+    flex-direction: column-reverse;
+}
+main .content-secondary{
+    width: 100%;
+    background-color: white;
+}
+main .content-secondary img{
+    width: 100%;
+}
+main .content-primary{
+    background-color:white;
+}
+/* versão desktop*/
+@media(min-width:768px){
+    header,ul,.logo-and-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; 
+        color:rgba(0, 0, 0, 0.494)  ;
+    }
+    header{
+        padding: 0rem 1rem 0rem 2rem;
+        background-color: white;
+    }
+    main{
+        flex-direction: row; 
+        height: 95vh;
+        width: 200vh;
+        padding:  3rem 10rem 4rem 10rem ;
+        margin-bottom: 10vh;
+    }
+    .img{
+        height: 80vh;
+        width: 55vh;
+        margin-right: 50vh;
+    }
+    .content-primary{
+        height: 55vh;
+        width: 90vh;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .content-page h1{
+        font-size: 9.5vh;
+        font-weight: 1000;
+        padding: 10vh 0vh 6vh 0vh;
+    }
+    .content-primary p{
+        color: rgba(0, 0, 0, 0.648);
+        font-size: larger;
+        font-weight: 100;
+        padding-right: 20vh;
+        padding-bottom: 2vh;
+    }
+    .footer{
+        margin-top: 9vh;
+        padding:  none ;
+        padding: 5vh 3vh 0vh 0vh;
+        margin-left: 0%;
+    
+        display: flex;
+        justify-content: flex-start;
+    }
+    .footer svg{
+        margin: 0px 3vh;
+    }
+    .menu{
+        margin-left: 3vh;
+    }
+    .logo{
+        padding-top: 1rem;
+    }
+     ul{ 
+       margin: 0%;
+    }
+    nav button{
+        margin:  0.5rem 1.5rem 0.5rem   1.5rem;
+        list-style: none;
+        font-weight: 100;
+    }
+    .mainmenubtn {
+        background-color: white;
+        color:rgba(0, 0, 0, 0.426);
+        border: none;
+        cursor: pointer;
+        padding:10px;
+        margin: top 0px;
+        display: flex;
+        align-items:center;
+        justify-content: space-between;
+        
+    }
+    .buttons{
+        align-self:flex-end;
+        margin-left: 5rem;
+        margin-bottom: 0.5rem ;
+    }
+  
+    .btn1{
+        color:rgba(0, 0, 0, 0.5)  ;
+        background-color: white;
+        border: none;
+        height: 2rem ;
+        width: 5rem;
+    }
+    .btn2{
+        color:rgba(0, 0, 0, 0.501)  ;
+        
+        background-color: white;
+        border: solid rgba(0, 0, 0, 0.453) 1px;
+        border-radius: 8px;
+        height: 2rem ;
+        width: 5rem;
+    }
+    .btn3{
+        color: white;
+        background-color: rgb(0, 0, 0);
+        border-radius: 10px;
+        border:1px solid black;
+        height: 2.5rem;
+        width: 7.5rem;
+        margin-top: 5vh;    
+    }
+    ul li,.btn1,.btn2,.btn3:hover{
+        cursor: pointer;
+    }
+    .btn1:active,.btn2:active{
+        color:rgb(0, 0, 0)  ;
+        
+        background-color: white;
+        border: solid rgb(0, 0, 0) 1px;
+        border-radius: 8px;
+    }
+    .btn3:active{
+        background-color: white;
+        color: black;
+        
+    }
+    ul li:active{
+        color: black;
+    }
+    .mainmenubtn:hover {
+        background-color: white;
+        color: black;
+        }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        
+    }
+    .dropdown-child {
+        display: none;
+        min-width: 125px;
+        border: solid 1px white;
+        border-radius: 5%;
+        box-shadow: 7px 7px 7px 7px  rgba(0, 0, 0, 0.146);
+        background-color: white;
+    }
+    .dropdown-child a {
+        color: black;
+        background-color: white;
+        padding: 3px 12px;
+        text-decoration: none;
+        display: block;
+        font-size: smaller;
+    
+        display: flex;
+        justify-content: space-between;
+       
+        
+    }
+    .dropdown:hover .dropdown-child {
+        display: block;
+        position: absolute;
+        box-shadow: 10px rgb(0, 0, 0);
+    }
+        
+}
