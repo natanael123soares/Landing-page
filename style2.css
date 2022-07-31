@@ -12,6 +12,7 @@ main{
     background-color: white;
     display: flex;
     flex-direction: column-reverse;
+    align-items: center;
 }
 main .content-secondary{
     width: 100%;
@@ -23,6 +24,25 @@ main .content-secondary img{
 main .content-primary{
     background-color:white;
 }
+.content-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btn3{
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    border:1px solid black;
+    height: 2.5rem;
+    width: 7.5rem;
+    margin: 20px;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+
 /* versão desktop*/
 @media(min-width:768px){
     header,ul,.logo-and-menu {
@@ -55,6 +75,13 @@ main .content-primary{
         flex-direction: column;
         align-items: flex-start;
     }
+    .content-page{
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
     .content-page h1{
         font-size: 9.5vh;
         font-weight: 1000;
@@ -77,7 +104,7 @@ main .content-primary{
         justify-content: flex-start;
     }
     .footer svg{
-        margin: 0px 3vh;
+        margin-left:  3vh;
     }
     .menu{
         margin-left: 3vh;
@@ -134,7 +161,7 @@ main .content-primary{
         border:1px solid black;
         height: 2.5rem;
         width: 7.5rem;
-        margin-top: 5vh;    
+        margin: 5vh 0vh 0vh 0vh ;    
     }
     ul li,.btn1,.btn2,.btn3:hover{
         cursor: pointer;
