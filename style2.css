@@ -6,7 +6,9 @@
     font-family: 'Overpass', sans-serif;
     font-weight: 100;
 }
-
+header nav {
+  display: none;
+}
 /* corpo do site */
 main{
     background-color: white;
@@ -19,15 +21,18 @@ main .content-secondary{
     background-color: white;
 }
 main .content-secondary img{
-    width: 100%;
+    width: 80%;
 }
 main .content-primary{
     background-color:white;
 }
-.content-page{
+
+.content-page, p{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-items: center;
+    padding: 1.5vh;
 }
 .btn3{
     color: white;
@@ -38,13 +43,27 @@ main .content-primary{
     width: 7.5rem;
     margin: 20px;
 }
-.footer{
-    display: flex;
-    justify-content: space-between;
-}
+.footer ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style: none;
+        background-color: white;
+    }
+.footer ul li img{
+    width: 75px;
+    height: 25px;
 
+}
+main .content-primary .content-page h1 br{
+    display:none;
+}
 /* versão desktop*/
 @media(min-width:768px){
+    main .content-primary .content-page h1 br{
+        display:block;
+    }
     header,ul,.logo-and-menu {
         display: flex;
         flex-direction: row;
@@ -56,20 +75,20 @@ main .content-primary{
         background-color: white;
     }
     main{
-        flex-direction: row; 
-        height: 95vh;
-        width: 200vh;
-        padding:  3rem 10rem 4rem 10rem ;
+        flex-direction: row;
+        justify-content: space-between; 
+        height: 90vh;
+        width: 223vh;
+        padding:  3rem 3rem 4rem 10rem ;
         margin-bottom: 10vh;
     }
     .img{
-        height: 80vh;
-        width: 55vh;
-        margin-right: 50vh;
+        height: 100vh;
+        margin:  20vh 25vh 0vh 0vh;
     }
     .content-primary{
         height: 55vh;
-        width: 90vh;
+        width: 100vh;
         
         display: flex;
         flex-direction: column;
@@ -83,8 +102,9 @@ main .content-primary{
         
     }
     .content-page h1{
-        font-size: 9.5vh;
+        font-size: 5rem;
         font-weight: 1000;
+        width: 100vh;
         padding: 10vh 0vh 6vh 0vh;
     }
     .content-primary p{
@@ -95,6 +115,7 @@ main .content-primary{
         padding-bottom: 2vh;
     }
     .footer{
+        width: 100%;
         margin-top: 9vh;
         padding:  none ;
         padding: 5vh 3vh 0vh 0vh;
@@ -103,8 +124,9 @@ main .content-primary{
         display: flex;
         justify-content: flex-start;
     }
-    .footer svg{
+    .footer ul {
         margin-left:  3vh;
+        width: 80%;
     }
     .menu{
         margin-left: 3vh;
