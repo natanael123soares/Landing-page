@@ -19,9 +19,8 @@ main{
 main .content-secondary{
     width: 100%;
     background-color: white;
-}
-main .content-secondary img{
-    width: 80%;
+    
+
 }
 main .content-primary{
     background-color:white;
@@ -61,6 +60,9 @@ main .content-primary .content-page h1 br{
 }
 /* versão desktop*/
 @media(min-width:768px){
+    header nav {
+        display: block;
+      }
     main .content-primary .content-page h1 br{
         display:block;
     }
@@ -83,7 +85,6 @@ main .content-primary .content-page h1 br{
         margin-bottom: 10vh;
     }
     .img{
-        height: 100vh;
         margin:  20vh 25vh 0vh 0vh;
     }
     .content-primary{
@@ -93,6 +94,9 @@ main .content-primary .content-page h1 br{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+    }
+    main .content-secondary img{
+    width: 100%;
     }
     .content-page{
 
