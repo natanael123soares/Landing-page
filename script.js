@@ -1,11 +1,8 @@
 
-    // document.addEventListener('resize', function ReSize() {
-    //     var width = window.innerWidth
-    //     var text =document.getElementById('h1')
-    //     if (width.value = 1440) {
-    //         text.innerHTML =  <h1> Make <br/>  remote work</h1> 
-    //     }
-    // })
-    if (window.matchMedia("(max-width: 768px)").matches) {
-       alert('funcionou')
-    }
+ function Change(){
+   var img = document.querySelector('.img')
+   var wdth = window.innerWidth
+   if (wdth <=  768 ){
+      img.innerHTML = "./images/image-hero-mobile.png"
+   }
+ }

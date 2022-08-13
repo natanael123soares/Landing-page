@@ -6,9 +6,10 @@
     font-family: 'Overpass', sans-serif;
     font-weight: 100;
 }
-header nav {
+header nav, .buttons {
   display: none;
 }
+.logo-and-menu{}
 /* corpo do site */
 main{
     background-color: white;
@@ -18,9 +19,12 @@ main{
 }
 main .content-secondary{
     width: 100%;
-    background-color: white;
-    
-
+    margin: 1;
+    background-color: t;
+}
+main .content-secondary img{
+    width: 100%;
+    height: 64vh;
 }
 main .content-primary{
     background-color:white;
@@ -58,12 +62,11 @@ main .content-primary{
 main .content-primary .content-page h1 br{
     display:none;
 }
+
 /* versão desktop*/
 @media(min-width:768px){
-    header nav {
-        display: block;
-      }
-    main .content-primary .content-page h1 br{
+    
+    main .content-primary .content-page h1 br, header nav, .buttons{
         display:block;
     }
     header,ul,.logo-and-menu {
@@ -85,7 +88,7 @@ main .content-primary .content-page h1 br{
         margin-bottom: 10vh;
     }
     .img{
-        margin:  20vh 25vh 0vh 0vh;
+        margin: 19vh 25vh 0vh 0vh;
     }
     .content-primary{
         height: 55vh;
@@ -94,9 +97,15 @@ main .content-primary .content-page h1 br{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+
+        
     }
-    main .content-secondary img{
-    width: 100%;
+    .content-primary p{
+        color: rgba(0, 0, 0, 0.648);
+        font-size: larger;
+        font-weight: 100;
+        padding-right: 20vh;
+        padding-bottom: 2vh;
     }
     .content-page{
 
@@ -111,12 +120,14 @@ main .content-primary .content-page h1 br{
         width: 100vh;
         padding: 10vh 0vh 6vh 0vh;
     }
-    .content-primary p{
-        color: rgba(0, 0, 0, 0.648);
-        font-size: larger;
-        font-weight: 100;
-        padding-right: 20vh;
-        padding-bottom: 2vh;
+    .content-secondary{
+        width: 100%;
+        height: 80vh;
+        background-color: white;
+    }
+    main .content-secondary img{
+        width: 99%;
+        height: 90vh;
     }
     .footer{
         width: 100%;
@@ -145,6 +156,7 @@ main .content-primary .content-page h1 br{
         margin:  0.5rem 1.5rem 0.5rem   1.5rem;
         list-style: none;
         font-weight: 100;
+
     }
     .mainmenubtn {
         background-color: white;
