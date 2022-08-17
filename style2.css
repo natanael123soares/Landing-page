@@ -9,7 +9,9 @@
 header nav, .buttons {
   display: none;
 }
-.logo-and-menu{}
+.logo-and-menu{
+    margin: 2vh
+}
 /* corpo do site */
 main{
     background-color: white;
@@ -23,8 +25,9 @@ main .content-secondary{
     background-color: t;
 }
 main .content-secondary img{
-    width: 100%;
-    height: 64vh;
+    width: 95%;
+    height: 45vh;
+    margin: 2vh;
 }
 main .content-primary{
     background-color:white;
@@ -36,6 +39,7 @@ main .content-primary{
     align-items: center;
     justify-items: center;
     padding: 1.5vh;
+    text-align: center;
 }
 .btn3{
     color: white;
@@ -61,6 +65,11 @@ main .content-primary{
 }
 main .content-primary .content-page h1 br{
     display:none;
+}
+.modal{
+    height: 10vh;
+    width: 10vh;
+    background-color: black;
 }
 
 /* versão desktop*/
@@ -106,13 +115,14 @@ main .content-primary .content-page h1 br{
         font-weight: 100;
         padding-right: 20vh;
         padding-bottom: 2vh;
+        text-align: start;
     }
     .content-page{
 
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        
+        text-align: start;
     }
     .content-page h1{
         font-size: 5rem;
