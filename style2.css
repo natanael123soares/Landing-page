@@ -10,7 +10,12 @@ header nav, .buttons {
   display: none;
 }
 .logo-and-menu{
-    margin: 2vh
+    margin: 3vh;
+    display: flex;
+    justify-content: space-between;
+}
+body{
+    height: 120vh;
 }
 /* corpo do site */
 main{
@@ -25,9 +30,9 @@ main .content-secondary{
     background-color: t;
 }
 main .content-secondary img{
-    width: 95%;
+    width: 100%;
     height: 45vh;
-    margin: 2vh;
+    margin: none;
 }
 main .content-primary{
     background-color:white;
@@ -66,11 +71,52 @@ main .content-primary{
 main .content-primary .content-page h1 br{
     display:none;
 }
+h1{
+    font-size: 2.5em;
+    font-weight:900;
+}
 .modal{
     height: 10vh;
     width: 10vh;
     background-color: black;
 }
+/* Menu Hamburguer */
+label{
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 22px;
+    width: 30px;
+}
+#checkbox-menu{
+    position: absolute;
+    opacity: 0;
+  }
+label span{
+    position: absolute;
+    display: block;
+    height: 5px;
+    width: 100%;
+    border-radius: 30px;
+    background: #f16234;
+    transition: 0.25s ease-in-out;
+}
+label span:nth-child(1){
+    top: 0;
+  }
+  
+  label span:nth-child(2){
+    top: 8px;
+  }
+  
+  label span:nth-child(3){
+    top: 16px;
+  }
+  #checkbox-menu:checked + label span:nth-child(1){
+    transform: rotate(-45deg);
+    top: 8px;
+  }
+  
 
 /* versão desktop*/
 @media(min-width:768px){
