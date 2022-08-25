@@ -13,7 +13,7 @@ nav{
     position: absolute;
     z-index: 1000;
     float: left;
-    width: 70%;
+    width: 0%;
     height: 150%;
     text-align: left;
     background-color: white;
@@ -166,8 +166,10 @@ label span:nth-child(1){
     transform: rotate(45deg);
     top: 8px;
   }
-  #checkbox:checked +  nav{
+  #nav.active {
+    width: 70%;
     visibility: visible;
+    transition: .2s;
   }
   
 /* versão desktop*/
