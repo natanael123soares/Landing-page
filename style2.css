@@ -6,8 +6,26 @@
     font-family: 'Overpass', sans-serif;
     font-weight: 100;
 }
- .buttons {
-  display: none;
+.buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btn1{
+    color:rgba(0, 0, 0, 0.5)  ;
+    background-color: white;
+    border: none;
+    height: 2rem ;
+    width: 5rem;
+}
+.btn2{
+    color:rgba(0, 0, 0, 0.501)  ;
+    
+    background-color: white;
+    border: solid rgba(0, 0, 0, 0.453) 1px;
+    border-radius: 8px;
+    height: 2rem ;
+    width: 75%;
 }
 nav{
     position: absolute;
@@ -20,6 +38,7 @@ nav{
     margin-left: 100px;
     margin-top:22px;
     visibility: hidden;
+   
 }
 .menu{
     margin-left: 3vh;
@@ -124,6 +143,11 @@ h1{
 
     
 /* Menu Hamburguer */
+label, .hamburguer{
+    display: block;
+    position: relative;
+    z-index:  1000;
+}
 label{
     cursor: pointer;
     position: relative;
@@ -169,9 +193,17 @@ label span:nth-child(1){
   #nav.active {
     width: 70%;
     visibility: visible;
-    transition: .2s;
+    transition:  margin-left .3s;
+    overflow: hidden;
   }
-  
+  #black{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    display: none;}
 /* versão desktop*/
 @media(min-width:768px){
     
@@ -376,6 +408,7 @@ label span:nth-child(1){
     }
     label, .hamburguer{
         display: none;
+        z-index: ;
     }
         
 }
