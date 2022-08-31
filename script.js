@@ -9,4 +9,5 @@ function toggleMenu(){
   var nav = document.querySelector('#nav')
   var black= document.querySelector('#black')
   nav.classList.toggle('active')
-  black.style.display = 'block'}
+  black.classList.toggle('black1')
+}

@@ -28,19 +28,19 @@
     width: 75%;
 }
 nav{
+    box-sizing: border-box;
     position: absolute;
     z-index: 1000;
     float: left;
     width: 0%;
-    height: 150%;
+    height: 150vh;
     text-align: left;
     background-color: white;
     margin-left: 100px;
-    margin-top:22px;
     visibility: hidden;
-   
 }
 .menu{
+    margin-top: 5vh;
     margin-left: 3vh;
     display: flex;
     flex-direction: column;
@@ -114,31 +114,52 @@ h1{
 }
 .mainmenubtn {
     background-color: white;
-    color:rgba(0, 0, 0, 0.426);
+    color:
+    rgba(0, 0, 0, 0.426);
     border: none;
     cursor: pointer;
     padding:10px;
     margin: top 0px;
     display: flex;
-    align-items:center;
+    align-items:
+    center;
     justify-content: space-between;
 }
 .mainmenubtn:hover {
     background-color: white;
     color: black;
     }
+
 .dropdown {
-    position: relative;
-    display: inline-block;
     
+    display: inline-block;
 }
 .dropdown-child {
     display: none;
     min-width: 125px;
+
     border: solid 1px white;
     border-radius: 5%;
     box-shadow: 7px 7px 7px 7px  rgba(0, 0, 0, 0.146);
     background-color: white;
+}
+.dropdown-child a {
+    color: black;
+    background-color: white;
+    padding: 3px 12px;
+    text-decoration: none;
+  
+    font-size: smaller;
+
+    display: flex;
+    justify-content: space-between;
+   
+    
+}
+.dropdown:hover .dropdown-child {
+    display: block;
+    position: absolute;
+    box-shadow: 10px rgb(0, 0, 0);
 }
 
     
@@ -146,7 +167,7 @@ h1{
 label, .hamburguer{
     display: block;
     position: relative;
-    z-index:  1000;
+    z-index:  1001;
 }
 label{
     cursor: pointer;
@@ -195,19 +216,22 @@ label span:nth-child(1){
     visibility: visible;
     transition:  margin-left .3s;
     overflow: hidden;
+    top: 0;
   }
-  #black{
+.black1{
     position: fixed;
     top: 0;
     left: 0;
     background-color: rgba(0,0,0,0.5);
     width: 100%;
     height: 100%;
-    display: none;}
+    
+    display: block;
+}
 /* versão desktop*/
 @media(min-width:768px){
     
-    main .content-primary .content-page h1 br, header nav, .buttons{
+    main .content-primary .content-page h1 br, header nav, .butt{
         display:block;
     }
     header,ul,.logo-and-menu {
@@ -322,10 +346,12 @@ label span:nth-child(1){
         justify-content: space-between;
         
     }
+   
     .buttons{
-        align-self:flex-end;
-        margin-left: 5rem;
-        margin-bottom: 0.5rem ;
+        display: flex;
+        flex-direction: row;
+        margin-left: 40rem;
+        margin-bottom: 0.5rem;
     }
   
     .btn1{
@@ -378,7 +404,6 @@ label span:nth-child(1){
     .dropdown {
         position: relative;
         display: inline-block;
-        
     }
     .dropdown-child {
         display: none;
@@ -408,7 +433,16 @@ label span:nth-child(1){
     }
     label, .hamburguer{
         display: none;
-        z-index: ;
+    }
+    .black1{
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(0,0,0,0.5);
+        width: 100%;
+        height: 100%;
+        
+        display: none;
     }
         
 }
