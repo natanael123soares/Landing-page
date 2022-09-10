@@ -51,7 +51,7 @@ nav{
     justify-content: space-between;
     
 }
-/* corpo do site */
+/* Body */
 main{
     background-color: white;
     display: flex;
@@ -180,7 +180,7 @@ h1{
 }
 
     
-/* Menu Hamburguer */
+/*  Hamburguer Menu */
 label, .hamburguer{
     display: block;
     position: relative;
@@ -245,7 +245,7 @@ label span:nth-child(1){
     
     display: block;
 }
-/* versão desktop*/
+/*desktop*/
 @media(min-width:768px){
     
     main .content-primary .content-page h1 br, header nav, .butt{
